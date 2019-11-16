@@ -1,8 +1,13 @@
 baseURL = "/"
 languageCode = "en-gb"
+defaultContentLanguage = "en"
+googleAnalytics = ""
+
 title = "Messaging Principles"
 theme = "techdoc"
 
+metaDataFormat = "yaml"
+enableGitInfo = true
 enableEmoji = true
 
 pygmentsStyle = "manni"
@@ -18,6 +23,12 @@ pygmentsUseClasses = false
     # Documentation Menu section
     # Menu style settings
     menu_style = "open-menu" # "open-menu" or "slide-menu"
+
+    # Analytic section
+    google_analytics_id = "" # Your Google Analytics tracking id
+    tag_manager_container_id = "" # Your Google Tag Manager container id
+    google_site_verification = "" # Your Google Site Verification for Search Console
+
 
 [[menu.main]]
     name = "Home"
