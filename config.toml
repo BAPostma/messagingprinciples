@@ -1,0 +1,30 @@
+baseURL = "/"
+languageCode = "en-gb"
+title = "Messaging Principles"
+theme = "techdoc"
+
+[Params]
+    # Theme settings section
+    # Theme color
+    custom_font_color = ""
+    custom_background_color = "#000078"
+
+    # Documentation Menu section
+    # Menu style settings
+    menu_style = "open-menu" # "open-menu" or "slide-menu"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+# Deployment
+[deployment]
+[[deployment.targets]]
+name = "s3website"
+URL = "s3://messagingprinciples?region=eu-west-2"
