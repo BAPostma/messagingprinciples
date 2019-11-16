@@ -15,14 +15,14 @@ weight: 20
 
 ### Example
 **Correct**
-```json
+```js
 MILEAGE_UPDATED_EVENT {
 	mileage: 12345
 }
 ```
 
 **Incorrect**
-```json
+```js
 MILEAGE_UPDATED_EVENT {
 	previous: 345
 	current: 12345

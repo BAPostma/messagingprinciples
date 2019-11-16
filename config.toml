@@ -3,6 +3,12 @@ languageCode = "en-gb"
 title = "Messaging Principles"
 theme = "techdoc"
 
+enableEmoji = true
+
+pygmentsStyle = "manni"
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+
 [Params]
     # Theme settings section
     # Theme color
@@ -22,6 +28,10 @@ theme = "techdoc"
     name = "About"
     url = "/about"
     weight = 2
+
+# Blackfriday Markdown
+[blackfriday]
+hrefTargetBlank = true
 
 # Deployment
 [deployment]

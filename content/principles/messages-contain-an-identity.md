@@ -17,7 +17,7 @@ Messages should always contain a field such as a unique identifier. This can be 
 
 ### Example
 **Correct**
-```json
+```js
 CHERISHED_PLATE_ATTACHED_EVENT {
 	vehicleId: 12345,
 	registrationNumber: "BR3NDA"
@@ -25,7 +25,7 @@ CHERISHED_PLATE_ATTACHED_EVENT {
 ```
 
 **Incorrect**
-```json
+```js
 CHERISHED_PLATE_ATTACHED_EVENT {
 	arn: 56789
 	registrationNumber: "BR3NDA"

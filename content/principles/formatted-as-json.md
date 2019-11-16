@@ -17,7 +17,7 @@ This is a _sensible default_: JSON is used unless otherwise decided by a team 
 
 ### Example
 **Correct**
-```json
+```js
 MILEAGE_UPDATED_EVENT {
 	mileage: 12345
 }

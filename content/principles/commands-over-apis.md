@@ -18,7 +18,7 @@ This principle acts as a _sensible default_. The use of commands is preferred o
 
 ### Example
 **Correct**
-```json
+```js
 ASSIGN_CAR_TO_SALES_CHANNEL_COMMAND {
 	carId: 123
 	channel: "Auction"
@@ -26,7 +26,7 @@ ASSIGN_CAR_TO_SALES_CHANNEL_COMMAND {
 ```
 
 **Incorrect**
-```
+```bash
 POST /api/AssignCarToSalesChannel?channel=Auction&carId=123
 ```
 

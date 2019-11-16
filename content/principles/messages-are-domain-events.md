@@ -18,7 +18,7 @@ Use _domain events_ over _integration events_. The difference being that a domai
 In the example, the current mileage of a vehicle is updated - which is a domain event "mileage updated". The fact that therefore the vehicle model that holds the mileage attribute has changed, is of no relevance to the consumer of a message.
 
 **Correct**
-```json
+```js
 NEW_MILEAGE_READ_EVENT {
 	mileage: 12345,
 	date: 2019-01-01
@@ -26,7 +26,7 @@ NEW_MILEAGE_READ_EVENT {
 ```
 
 **Incorrect**
-```json
+```js
 VEHICLE_UPDATED_EVENT {
 	colour: "black",
 	mileage: 12345
