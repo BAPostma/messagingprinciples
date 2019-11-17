@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-gb"
 defaultContentLanguage = "en"
-googleAnalytics = ""
+googleAnalytics = "UA-3047863-9"
 
 title = "Messaging Principles"
 theme = "techdoc"
@@ -25,7 +25,7 @@ pygmentsUseClasses = false
     menu_style = "open-menu" # "open-menu" or "slide-menu"
 
     # Analytic section
-    google_analytics_id = "" # Your Google Analytics tracking id
+    google_analytics_id = "UA-3047863-9" # Your Google Analytics tracking id
     tag_manager_container_id = "" # Your Google Tag Manager container id
     google_site_verification = "" # Your Google Site Verification for Search Console
 
