@@ -1,0 +1,50 @@
+version: 0.2
+
+env:
+  variables:
+     HUGO_VERSION: "0.59.1"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+  #secrets-manager:
+     # key: secret-id:json-key:version-stage:version-id
+     # key: secret-id:json-key:version-stage:version-id
+  exported-variables:
+     - HUGO_VERSION
+     # - variable
+  #git-credential-helper: yes
+
+phases:
+  install:
+    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
+    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
+    runtime-versions:
+      golang: 1.13
+      # name: version
+    commands:
+      - echo Installing Hugo version $HUGO_VERSION
+      - url="https://github.com/gohugoio/hugo/releases/download/v$(echo $HUGO_VERSION)/hugo_extended_$(echo $HUGO_VERSION)_Linux-64bit.deb"
+      - wget -nv $url
+      - dpkg -i hugo_extended_$(echo $HUGO_VERSION)_Linux-64bit.deb
+      - hugo version
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+       - hugo
+  post_build:
+    commands:
+       - hugo deploy
+artifacts:
+  files:
+    - '**/*'
+    # - location
+  name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  base-directory: public
+#cache:
+  #paths:
+    # - paths
